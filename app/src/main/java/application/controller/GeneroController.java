@@ -23,7 +23,7 @@ public class GeneroController {
     }
 
     @RequestMapping("/insert")
-    public String inster() {
+    public String instert() {
         return "/genero/insert";
     }
 
@@ -34,6 +34,6 @@ public class GeneroController {
 
         generoRepo.save(genero);
 
-        return "redirect:/genero/list"
+        return "redirect:/genero/list";
     }
 }
