@@ -17,7 +17,7 @@ public class GeneroController {
     private GeneroRepository generoRepo;
 
     @RequestMapping("/list")
-    public string list(Model model) {
+    public String list(Model model) {
         model.addAttribute("generos", generoRepo.findAll());
         return "/genero/list";
     }
