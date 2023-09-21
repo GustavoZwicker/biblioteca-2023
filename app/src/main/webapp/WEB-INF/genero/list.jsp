@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Gêneros</title>
-        <link href="/css/bootstrap.min.css rel="stylesheet" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
     </head>
     <body>
         <div class="container">
@@ -17,7 +17,7 @@
                     <th>Nome</th>
                     <th>&nbsp;</th>
                 </tr>
-                <c:forEach var="item" items="$(generos)">
+                <c:forEach var="item" items="${generos}">
                     <tr>
                         <td>${item.id}</td>
                         <td>${item.nome}</td>
